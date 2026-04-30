@@ -90,6 +90,12 @@ body {
 .section.fade .animated-line:nth-child(5) {
   animation-delay: 1.4s;
 }
+.section.fade .animated-line:nth-child(6) {
+  animation-delay: 1.7s;
+}
+.section.fade .animated-line:nth-child(7) {
+  animation-delay: 2.0s;
+}
 
 @keyframes fadeSlideIn {
   to {
@@ -104,17 +110,68 @@ body {
 
 .logo-hero {
   width: 400px;
+  max-width: 80%;
 }
 
-.logo {
-  font-size: 64px;
+.hero-title {
+  font-size: 42px;
   font-weight: 700;
-  letter-spacing: -2px;
-  margin-top: 80px;
+  letter-spacing: -1px;
+  margin-top: 30px;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-.tagline {
-  font-size: 18px;
-  letter-spacing: 3px;
-  color: #ddd;
+.hero-tagline {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #cfe9ff;
+  margin-top: 10px;
+}
+
+#pesquisas {
+  max-width: 900px;
+  text-align: left;
+}
+
+#pesquisas h2 {
+  text-align: center;
+}
+
+.study {
+  background-color: rgba(19, 44, 78, 0.55);
+  border-left: 4px solid #00d9ff;
+  border-radius: 6px;
+  padding: 20px 25px;
+  margin: 25px 0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.study h3 {
+  margin-top: 0;
+  color: #00d9ff;
+  font-size: 22px;
+}
+
+.study p {
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  .navbar li {
+    margin: 0 8px;
+  }
+  .hero-title {
+    font-size: 28px;
+  }
+  .hero-tagline {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
 }
